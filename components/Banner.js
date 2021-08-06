@@ -8,7 +8,7 @@ function Banner() {
 
             <div className="absolute top-1/2 w-full text-center">
                 <p className="text-sm sm:text-lg">
-                    Not sure whaere to do??
+                    Not sure what to do??
                 </p>
                 <button className="text-purple-500 bg-white px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 duration-150" >I'm flexible</button>
             </div>
