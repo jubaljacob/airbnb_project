@@ -19,7 +19,7 @@ export default function Home({ exploreData, cardsData }) {
       <Header />
       <Banner />
 
-      <main className="max-w-7xl mt-10 mb-10 mx-auto px-8 sm:px-16 bg-white drop-shadow-md rounded-xl ">
+      <main className="max-w-7xl mt-16 mb-10 mx-auto px-8 sm:px-16 bg-white drop-shadow-md rounded-xl ">
         {/* mx-auto(central always )max-w(keeps it at that amximum width) */}
         <section className="pt-6 ">
           <h2 className="text-4xl font-semibold pd-5">Explore Nearby</h2>
@@ -71,6 +71,9 @@ export default function Home({ exploreData, cardsData }) {
     </div>
   )
 }
+
+
+
 
 export async function getStaticProps() {
   const exploreData = await fetch("https://jsonkeeper.com/b/8WET"). 
