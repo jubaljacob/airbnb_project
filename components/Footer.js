@@ -1,56 +1,76 @@
 function Footer() {
     return (
-         
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 px-60 py-14 bg-gray-200 text-gray-600">
+
+
+    <div className="divide-y-4 divide-gray-400 ">
+
+        <div>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 px-60 py-14 bg-gray-200 text-gray-600  ">
+           
             
-            <div className="space-y-4 text-s text-gray-800">
-                <h5 className="font-bold">ABOUT</h5>
-                <p>How Airbnb Works</p>
-                <p>Newsroom</p>
-                <p>Investors</p>
-                <p>Airbnb Plus</p>
-                <p>Airbnb Luxe</p>
+                <div className="space-y-4 text-s text-gray-800">
+                    <h5 className="font-bold">ABOUT</h5>
+                    <p>How Airbnb Works</p>
+                    <p>Newsroom</p>
+                    <p>Investors</p>
+                    <p>Airbnb Plus</p>
+                    <p>Airbnb Luxe</p>
 
+
+                </div>
+
+                <div className="space-y-4 text-s text-gray-800">
+                    <h5 className="font-bold">COMMUNITY</h5>
+                    <p>Diversity & Belonging</p>
+                    <p>Accessibility</p>
+                    <p>Airbnb Associates</p>
+                    <p>Not a real website </p>
+                    <p>Airbnb.org</p>
+
+                </div>
+
+                <div className="space-y-4 text-s text-gray-800">
+                    <h5 className="font-bold">HOST</h5>
+                    <p>Jubal Chandy Jacob</p>
+                    <p>Host an Online Experience</p>
+                    <p>Host an Experience</p>
+                    <p>Responsible hosting</p>
+                    <p>Community Centre</p>
+
+
+                </div>
+
+                <div className="space-y-4 text-s text-gray-800 ">
+                    <h5 className="font-bold">SUPPORT</h5>
+                    <p>Help Center</p>
+                    <p>jubalcjacob@gmail.com</p>
+                    <p>github.com/jubaljacob</p>
+                    <p>instagram jx.bal</p>
+                    <p>Trust & Safety</p>
+
+
+                </div>
+
+
+          
 
             </div>
 
-            <div className="space-y-4 text-s text-gray-800">
-                <h5 className="font-bold">COMMUNITY</h5>
-                <p>Diversity & Belonging</p>
-                <p>Accessibility</p>
-                <p>Airbnb Associates</p>
-                <p>Not a real website </p>
-                <p>Airbnb.org</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 px-60 py-14 bg-gray-200 text-gray-600  ">
+                <div className="text-s" >
+                    <h2 >&copy;Jubal Jacob</h2>
+                </div>
 
-            </div>
-
-            <div className="space-y-4 text-s text-gray-800">
-                <h5 className="font-bold">HOST</h5>
-                <p>Jubal Chandy Jacob</p>
-                <p>Host an Online Experience</p>
-                <p>Host an Experience</p>
-                <p>Responsible hosting</p>
-                <p>Community Centre</p>
-
-
-            </div>
-
-            <div className="space-y-4 text-s text-gray-800">
-                <h5 className="font-bold">SUPPORT</h5>
-                <p>Help Center</p>
-                <p>jubalcjacob@gmail.com</p>
-                <p>github.com/jubaljacob</p>
-                <p>instagram jx.bal</p>
-                <p>Trust & Safety</p>
-
-
-            </div>
-
-
-
+                <div className=" flex justify-end"><link rel="icon" href="/favicon.ico" /></div>
             
+            </div>
+
 
         </div>
+         
+        
+    </div>
+        
 
     )
 }
