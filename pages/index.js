@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
+import MediumCard from '../components/MediumCard';
 import SmallCard from '../components/SmallCard';
 
-export default function Home({ exploreData }) {
+export default function Home({ exploreData, cardsData }) {
  
   return (
     <div className="">
@@ -22,14 +23,31 @@ export default function Home({ exploreData }) {
           <h2 className="text-4xl font-semibold pd-5">Explore Nearby</h2>
 
           {/* Pull data from a server --API endpoints */}
-          {exploreData?.map(({img, distance, location}) => (
-            <SmallCard
-            key={img}
-            img={img}
-            distance={distance}
-            location={location}
-            />
-          ))}
+
+
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {exploreData?.map(({img, distance, location}) => (
+              <SmallCard
+                key={img}
+                img={img}
+                distance={distance}
+                location={location}
+              />
+            ))}
+          </div>
+          
+          
+        </section>
+
+        <section>
+
+              <h2 className="text-4xl font-semibold py-8">Live Anywhere</h2>
+              {cardsData?.map(({img, title}) =>(
+                <MediumCard key={img} img={img} title={title}/>
+
+              ))}
+
         </section>
       </main>
 
@@ -48,9 +66,15 @@ export async function getStaticProps() {
     (res) => res.json()
   );
 
+  const cardsData = await fetch("https://links.papareact.com/zp1").
+  then(
+    (res) => res.json()
+  );
+
   return{
       props: {
-        exploreData: exploreData
+        exploreData,
+        cardsData,
       }
   }
 }
