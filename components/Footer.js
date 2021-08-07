@@ -2,9 +2,9 @@ function Footer() {
     return (
 
 
-    <div className=" ">
+    <div className=" mx-auto">
          
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 px-60 py-14 bg-gray-200 text-gray-600 border-b ">
+        <div className=" grid grid-cols-1 md:grid-cols-4 gap-y-10 px-60 py-14 bg-white text-gray-600 border-b ">
             
             <div className="space-y-4 text-s text-gray-800">
                 <h5 className="font-bold">ABOUT</h5>
@@ -54,9 +54,11 @@ function Footer() {
 
         </div>
 
+        
+
 
         <div>
-            <div className="grid grid-cols-2 md:grid-cols-2 px-60 py-14 bg-gray-200 text-gray-600">
+            <div className=" grid grid-cols-2 md:grid-cols-2 px-60 py-14 bg-white text-gray-600 first:border-t">
 
                 <div>
 
