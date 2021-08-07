@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { useRouter } from "next/dist/client/router";
 import { format } from "date-fns";
+import InfoCard from "../components/infoCard";
 
 function Search({searchResults}) {
     const router = useRouter();
@@ -13,15 +14,17 @@ function Search({searchResults}) {
     const formattedStartDate = format(new Date(startDate), "dd MMM yy");
     const formattedEndDate = format(new Date(endDate), "dd MMM yy");
     const range = `${formattedStartDate} - ${formattedEndDate}`;
-
+ 
     
     return (
         <div>
             <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`}/>
             <main className="flex">
-                <section className="flex-grow pt-14 px-6">
-                    <p className="text-xs">
-                        300+ Stays - {range} - for {noOfGuests} guests
+                <section className="max-w-7xl mx-auto mt-10 rounded-xl  bg-gray-50 flex-grow pt-14 pb-5 px-6">
+                    <p className=" inline-flex rounded-xl p-3   ">
+                        <p className="mt-2">300+ Stays -</p> 
+                        <p className="button hover:shadow-lg bg-red-400 text-white">{range}</p> 
+                        <p className="mt-2">- for {noOfGuests} guests</p>
                     </p>
                     <h1 className="text-3xl font-semibold mt-2 mb-6"> Stays in {location}
                     </h1>
@@ -36,13 +39,31 @@ function Search({searchResults}) {
                         <p className="button">Beds</p>
 
                     </div>
+
+                    <div className="flex flex-col">
+
+                     {searchResults?.map(({img, location, title, description, star, price, total}) => (
+                        <InfoCard 
+                            key={img}
+                            img={img}
+                            location={location}
+                            title={title}
+                            description={description}
+                            star={star}
+                            price={price}
+                            total={total}
+                            />
+                    ))}
+
+                    </div>
+                    
                 </section>
 
 
             </main>
             <Footer/>
         </div>
-    )
+    );
 }
 
 export default Search
