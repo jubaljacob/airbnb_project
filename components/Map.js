@@ -9,14 +9,7 @@ function Map({searchResults}) {
 
     //transfomr search result obj to lat long obj
 
-    const coordinates = searchResults.map((result) => ({
-        longitude: result.long,
-        latitude: result.lat,
-    }));
-
-    const center = getCenter(coordinates);
-
-    console.log(center);
+   
 
     const [viewport, setViewport] = useState({
         width: "100%",
