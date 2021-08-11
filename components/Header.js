@@ -65,7 +65,7 @@ function Header({ placeholder }) {
 
             {/* Middle -- Search*/}
 
-            <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-sm">
+            
                 <input 
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
