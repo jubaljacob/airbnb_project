@@ -102,7 +102,13 @@ function Header({ placeholder }) {
                     </h2>
 
 
-                    
+                    <UserIcon className="h-5" />
+                    <input 
+                    value={noOfGuests}
+                    onChange={e => setNoOfGuests(e.target.value)}
+                    type="number" 
+                    min={1}
+                    className="w-12 pl-2 text-lg outline-none text-red-400"
                     />
                     
                     </div>
