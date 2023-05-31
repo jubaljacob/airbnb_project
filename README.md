@@ -1,4 +1,4 @@
-# Airbnb Clone
+# Airbnb project
 ![airbnb1](https://github.com/jubaljacob/airbnb_project/assets/71512643/2ede3683-59c5-424b-ac1d-af3cd683ee21)
 
 
