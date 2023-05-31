@@ -1,6 +1,6 @@
 # Airbnb Clone
+![airbnb1](https://github.com/jubaljacob/airbnb_project/assets/71512643/2ede3683-59c5-424b-ac1d-af3cd683ee21)
 
-![Airbnb Clone](images/demo.png)
 
 This project is an Airbnb clone built using Next.js, TypeScript, Tailwind CSS, HeroIcons, MapBox, ESLint, and Prettier. It aims to recreate the user interface and functionality of the popular Airbnb website, allowing users to search for and book accommodations in various locations.
 
